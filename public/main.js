@@ -161,22 +161,18 @@ recordBtn.onclick = async () => {
 
     try {
       stream = await navigator.mediaDevices.getUserMedia({ audio: true })
-
       recorder = new MediaRecorder(stream)
       chunks = []
 
       recorder.start()
       recordBtn.textContent = '⏹️'
-
       recorder.ondataavailable = (e) => {
         if (e.data.size > 0) chunks.push(e.data)
       }
 
       recorder.onstop = () => {
-
         const blob = new Blob(chunks, { type: 'audio/webm' })
         const reader = new FileReader()
-
         reader.onload = () => {
           socket.emit('message', {
             name: nameInput.value,
@@ -187,9 +183,7 @@ recordBtn.onclick = async () => {
         }
 
         reader.readAsDataURL(blob)
-
         stream.getTracks().forEach(track => track.stop())
-
         recordBtn.textContent = '🎤'
       }
 
