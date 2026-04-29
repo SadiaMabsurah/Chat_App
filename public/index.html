@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>PinkWhisper💕</title>
+</head>
+
+<body>
+
+<h1 class="app-title">PinkWhisper💕</h1>
+
+<div class="main">
+
+  <div class="name">
+    <span><i class="fa-solid fa-user"></i></span>
+    <input type="text" id="name-input" class="name-input" value="anonymous">
+  </div>
+
+<div id="typing-container" class="typing-box" style="display:none;">
+  <p id="feedback"></p>
+</div>
+
+  <ul class="message-container" id="message-container"></ul>
+
+  <div id="typing-container" class="typing-box" style="display:none;">
+    <p id="feedback" class="feedback"></p>
+  </div>
+
+  <div id="emoji-picker" class="emoji-picker" style="display:none;"></div>
+
+  <form class="message-form">
+
+    <div class="left-actions">
+      <button type="button" id="emoji-btn" class="icon-btn">😊</button>
+
+      <input type="file" id="file-input" accept="image/*,audio/*" hidden>
+
+      <button type="button" id="image-btn" class="icon-btn">
+        <i class="fas fa-image"></i>
+      </button>
+    </div>
+
+    <input
+      type="text"
+      id="message-input"
+      class="message-input"
+      placeholder="Type a message..."
+      autocomplete="off"
+    >
+
+    <div class="right-actions">
+      <button type="button" id="record-btn" class="icon-btn">🎤</button>
+      <button type="submit" class="send-button">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+
+  </form>
+
+</div>
+
+<h3 class="clients-total" id="client-total">Total clients: 0</h3>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+
+</body>
+</html>
