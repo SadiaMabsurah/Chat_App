@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <title>PinkWhisper README</title>
 </head>
+
 <body>
-  
+
   <h1> PinkWhisper – Real-Time Chat Application</h1>
 
   <h3>👩‍💻 Developed By</h3>
@@ -36,6 +38,7 @@
     <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
     <li><strong>Backend:</strong> Node.js, Express.js</li>
     <li><strong>Real-time Communication:</strong> Socket.IO</li>
+    <li><strong>Networking:</strong> Client-Server Architecture over TCP/IP (via WebSocket)</li>
     <li><strong>Libraries:</strong> Moment.js, Font Awesome</li>
   </ul>
 
@@ -66,12 +69,14 @@ PinkWhisper/
     <li>The server broadcasts messages instantly to all connected clients</li>
     <li>Images and audio are sent using Base64 encoding</li>
     <li>Typing indicators update in real-time</li>
+    <li>Communication is based on a client-server model and runs over TCP/IP network protocols using WebSocket, which ensures reliable data transmission.</li>
   </ul>
 
   <h2>🎯 Learning Objectives</h2>
   <ul>
     <li>Understand real-time web communication</li>
-    <li>Learn practical use of Socket.IO</li>
+    <li>Learn client-server architecture in networking</li>
+    <li>Understand TCP/IP-based communication concepts</li>
     <li>Handle multimedia data in web applications</li>
     <li>Design interactive user interfaces</li>
   </ul>
