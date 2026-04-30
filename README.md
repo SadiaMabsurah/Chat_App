@@ -80,17 +80,5 @@ PinkWhisper/
     <li>Design interactive user interfaces</li>
   </ul>
 
-  <h2>🔒 Limitations</h2>
-  <ul>
-    <li>No user authentication system</li>
-    <li>No database (messages are not saved)</li>
-  </ul>
-
-  <h2>🌱 Future Improvements</h2>
-  <ul>
-    <li>Add login/signup system</li>
-    <li>Store messages using database</li>
-  </ul>
-
 </body>
 </html>
