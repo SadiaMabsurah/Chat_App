@@ -84,14 +84,12 @@ PinkWhisper/
   <ul>
     <li>No user authentication system</li>
     <li>No database (messages are not saved)</li>
-    <li>Works only when server is running</li>
   </ul>
 
   <h2>🌱 Future Improvements</h2>
   <ul>
     <li>Add login/signup system</li>
     <li>Store messages using database</li>
-    <li>Create private chat rooms</li>
   </ul>
 
 </body>
