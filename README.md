@@ -5,7 +5,7 @@
 </head>
 <body>
   
-  <h1> PinkWhisper💕 – Real-Time Chat Application</h1>
+  <h1> PinkWhisper – Real-Time Chat Application</h1>
 
   <h3>👩‍💻 Developed By</h3>
   <p>
